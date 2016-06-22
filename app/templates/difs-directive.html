@@ -1,0 +1,340 @@
+
+
+		<center>
+		<!-- ........................................TABLA DESPUES A LAS PASO .................................................... -->
+		<!-- ........................................TABLA DESPUES A LAS PASO .................................................... -->
+		<!-- ........................................TABLA DESPUES A LAS PASO .................................................... -->
+
+		<div class="comparator">
+
+			<div style="width:100%;height:30px">
+				<div class="georgia" style="width:20%;font-size:15px;float:left;font-weight:bold">Seleccioná un candidato</div>
+				<div class="georgia" style="width:60%;font-size:15px;float:left;font-weight:bold">Probabilidad que...</div>
+				<div class="georgia" style="width:20%;font-size:15px;float:left;font-weight:bold">Seleccioná un candidato</div>
+			</div>
+
+			<div>
+				<div class="compcol1">
+					<div class="stag-book contCandCols" hover-cand click-cand ng-repeat="datos in datosTotalesPost" 
+						 id="cizq{{$index}}" ng-click="cambiovalorizq($index,0); createCompDif(0); createGraph();" ng-class="{'clickCand':!izqPost[$index]}">
+
+							<div class="contlogoCand"><img ng-src="{{datos.fotos}}" class="logoCand"/></div>
+							<p class="nombreCand">{{datos.cand}}</p>
+
+					</div>
+					
+				</div>
+
+				<div class="compcentro">
+
+					<div class="contenedorProb" >
+						<span class="stag" style="font-size:25px;vertical-align:center" ng-show="!izqPost[izqIndexPost]">
+							{{datosTotalesPost[izqIndexPost].cand}}
+						</span>
+					</div>
+					<div class="contenedorProb stag" >
+						<select ng-model="ventajaPost" class="selector" ng-change="createCompDif(0)">
+							<option value="s0" ng-selected="1+1 === 2">le gane a</option>
+							<option value="s3">le saque 3 puntos a</option>
+							<option value="s5">le saque 5 puntos a</option>
+							<option value="s75">le saque 7,5 puntos a</option>
+							<option value="s10">le saque 10 puntos a</option>
+							<option value="s15">le saque 15 puntos a</option>
+						</select>
+
+					</div>
+					<div class="contenedorProb" >
+						<span class="stag" style="font-size:25px;vertical-align:center" ng-show="!derPost[derIndexPost]">
+							{{datosTotalesPost[derIndexPost].cand}}
+						</span>
+					</div>
+					<div class="grafynum">
+						<div class="graf" id="containerPost"></div>
+						<div class="numytext">
+							<div class="num" compile="tempPost"></div>
+							<div class="text_underGraph" compile="texto_underGraphPost"></div>
+						</div>						
+					</div>
+
+				</div>
+
+				<div class="compcol2">
+					<div class="stag-book contCandCols" hover-cand click-cand ng-repeat="datos in datosTotalesPost" 
+						id="cder{{$index}}" ng-click="cambiovalorder($index,0); createCompDif(0); createGraph();" ng-class="{'clickCand':!derPost[$index]}">
+
+							<div class="contlogoCand"><img ng-src="{{datos.fotos}}" class="logoCand"/></div>
+							<p class="nombreCand">{{datos.cand}}</p>
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- ........................................TABLA ANTERIOR A LAS PASO .................................................... -->
+		<!-- ........................................TABLA ANTERIOR A LAS PASO .................................................... -->
+		<!-- ........................................TABLA ANTERIOR A LAS PASO .................................................... -->
+		<div></div>
+		<button type="button" class="btn btn-default btn-lg" ng-click="difPrePasoChange()" style="float:left">
+  			<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"  ng-show="!diferenciasPrePaso"></span>
+  			<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" ng-show="diferenciasPrePaso"></span>
+		</button>
+		<div></div>
+		<div class="tituloDifPre">Diferencias anteriores a las PASO</div>
+		<div></div>
+		<div class="comparator" ng-show="diferenciasPrePaso">
+
+			<div style="width:100%;height:30px">
+				<div class="georgia" style="width:20%;font-size:15px;float:left;font-weight:bold">Seleccioná un candidato</div>
+				<div class="georgia" style="width:60%;font-size:15px;float:left;font-weight:bold">Probabilidad que...</div>
+				<div class="georgia" style="width:20%;font-size:15px;float:left;font-weight:bold">Seleccioná un candidato</div>
+			</div>
+
+			<div>
+				<div class="compcol1">
+					<div class="stag-book contCandCols" hover-cand click-cand ng-repeat="datos in data" 
+						 id="cizq{{$index}}" ng-click="cambiovalorizq($index,1); createCompDif(1); createGraph();" ng-class="{'clickCand':!izq[$index]}">
+
+							<div class="contlogoCand"><img ng-src="{{datos.fotos}}" class="logoCand"/></div>
+							<p class="nombreCand">{{datos.cand}}</p>
+
+					</div>
+					
+				</div>
+
+				<div class="compcentro">
+
+					<div class="contenedorProb" >
+						<span class="stag" style="font-size:25px;vertical-align:center" ng-show="!izq[izqIndex]">
+							{{datosTotales[izqIndex].cand}}
+						</span>
+					</div>
+					<div class="contenedorProb stag" >
+						<select ng-model="ventaja" class="selector" ng-change="createCompDif(1)">
+							<option value="s0" ng-selected="1+1 === 2">le gane a</option>
+							<option value="s3">le saque 3 puntos a</option>
+							<option value="s5">le saque 5 puntos a</option>
+							<option value="s10">le saque 10 puntos a</option>
+						</select>
+
+					</div>
+					<div class="contenedorProb" >
+						<span class="stag" style="font-size:25px;vertical-align:center" ng-show="!der[derIndex]">
+							{{datosTotales[derIndex].cand}}
+						</span>
+					</div>
+					<div class="grafynum">
+						<div class="graf" id="container"></div>
+						<div class="numytext">
+							<div class="num" compile="temp"></div>
+							<div class="text_underGraph" compile="texto_underGraph"></div>
+						</div>						
+					</div>
+
+				</div>
+
+				<div class="compcol2">
+					<div class="stag-book contCandCols" hover-cand click-cand ng-repeat="datos in data" 
+						id="cder{{$index}}" ng-click="cambiovalorder($index,1); createCompDif(1); createGraph();" ng-class="{'clickCand':!der[$index]}">
+
+							<div class="contlogoCand"><img ng-src="{{datos.fotos}}" class="logoCand"/></div>
+							<p class="nombreCand">{{datos.cand}}</p>
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		</center>
+
+
+<script>
+
+
+</script>
+
+<style>
+.comparator {
+	width: 100%;
+	margin-top: 20px;
+	height: 350px;
+	margin-bottom: 100px;
+}
+
+.titulocomparator{
+	width:100%;
+
+}
+
+.selector{
+	font-size:20px;
+	vertical-align:center;
+	width:100%;
+}
+.contenedorCand{
+	width:calc(100% /3);
+	height:100px;
+	float:left;
+
+
+}
+.contenedorProb{
+	width:calc(100% /3);
+	height:100px;
+	float:left;
+	padding-top:38px;
+}
+
+.grafynum{
+	height:350px;
+	width:100%;
+	float:left;
+}
+
+.graf{
+	width: 75%;
+	height: 95%;
+	float: left;
+}
+.num{
+
+	position: relative;
+	padding-top: 50px;
+	/* padding-right: 0px; */
+	font-family: Stag-Medium, sans-serif;
+	font-size: 50px;
+	color: rgb(94, 140, 192);
+	/* width: 27%; */
+	/* float: right; */
+	/* text-align: -webkit-right; */
+
+}
+
+.numytext{
+	width: 25%;
+	height: 95%;
+	float: right;
+}
+
+.text_underGraph { 
+	font-family: Stag-Light, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	padding-left: 17px;
+	padding-right: 17px;
+	float: left;
+	text-align: left;
+}	
+
+.compcol1 {
+	width:20%;
+	border-top: 3px solid black;
+
+	height:400px;
+	float:left;
+}
+
+.compcol2 {
+	width:20%;
+	border-top: 3px solid black;
+
+	height:400px;
+	float:left;
+}
+
+.compcentro {
+	width: 55%;
+	border-top: 3px solid black;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	height: 400px;
+	float: left;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	
+}
+
+.contCandCols {
+	width:100%;
+	height:calc(100%/7);
+	border-collapse: collapse;
+	border-bottom: 1px solid black;
+	font-size:23px;
+	cursor:pointer;
+
+}
+.nombreCand{
+	float: right;
+	width: 60%;
+	margin-top: 15px;
+	text-align: left;
+}
+.contlogoCand{
+	
+	height: 100%;
+	width: 35%;
+	float: left;
+
+}
+.logoCand {
+	height:100%;
+	width:auto;
+	
+}
+.hoverCand {
+	/*color:white;*/
+	background:#92C0E8;
+}
+.clickCand {
+	/*color:white;*/
+	background:#428bca;
+}
+.cienpor{
+	width:100%;
+	height:100%;
+}
+
+
+/*-------------------------------------------Grafico-------------------*/
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+
+}
+
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.axis text {
+    font-family: Stag, sans-serif;
+    font-size: 11px;
+}
+
+</style>
+
+
+		<!--center>
+		<table class="table-bordered table-condensed" style="margin-top:30px" width="75%">	
+			<tr>
+				<th>Probabilidad de que</th>
+				<th>Le gane a</th>
+				<th>Le saque 3 puntos a</th>
+				<th>Le saque 5 puntos a</th>
+				<th>Le saque 10 puntos a</th>
+			</tr>
+			<tr class="negrita" ng-repeat="datos in difs[0]">
+					<td>{{datos.dif}}</td>
+					<td>{{datos.s0 | percentage}}</td>
+					<td>{{datos.s3 | percentage:2}}</td>
+					<td>{{datos.s5 | percentage:2}}</td>
+					<td>{{datos.s10 | percentage:2}}</td>		
+			</tr>
+		</table>
+		</center-->

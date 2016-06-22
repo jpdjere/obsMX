@@ -1,0 +1,373 @@
+
+<div>
+	<div class="titTablaEnc" style="margin-top:5px">Encuestas para PASO - Pre cierre de listas</div>
+	<div style="margin-top: 25px;">
+
+		<center>
+		<table class="table-condensed tablasTexto" width="100%">	
+			<tr class="stag-book borderBottomThick">
+				<th class="borderRight textoCenter">ENCUESTA N°</th>
+				<th class="textoCenter">FECHA</th>
+				<th class="textoCenter">ENCUESTADORA</th>
+				<th class="textoCenter">PESO</th>
+				<!--th class="textoCenter borderLeft">DESCARGA</th-->
+			</tr>
+			<tr class="stag-book borderBottomFino negrita" ng-repeat="datos in store.encuestasPASO">
+					<td class="borderRight textoCenter">{{datos.nro}}</td>
+					<td class="textoCenter">{{datos.fecha}}</td>
+					<td class="textoCenter">{{datos.enc}}</td>
+					<td class="textoCenter">
+							<span ng-if="datos.peso >= 0 && datos.peso < 0.05">
+								<img src="images/bat0.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.05 && datos.peso < 0.1">
+								<img src="images/bat1.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.1 && datos.peso < 0.15">
+								<img src="images/bat2.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.15 && datos.peso < 0.20">
+								<img src="images/bat3.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.20 && datos.peso < 0.30">
+								<img src="images/bat4.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.30">
+								<img src="images/bat5.png" height="20" width="20" />
+							</span>	
+					</td>
+					<!--td class="textoCenter borderLeft">
+						<a ng-href="{{datos.link}}">
+							<img src="images/downloadIcon.png" height="20" width="20" />
+						</a>
+					</td-->
+
+						
+			</tr>
+		</table>
+		</center>
+
+	</div>	
+
+	<div class="titTablaEnc" style="margin-top:5px">Encuestas para PASO - Post cierre de listas</div>
+	<div style="margin-top: 25px;">
+
+		<center>
+		<table class="table-condensed tablasTexto" width="100%">	
+			<tr class="stag-book borderBottomThick">
+				<th class="borderRight textoCenter">ENCUESTA N°</th>
+				<th class="textoCenter">FECHA</th>
+				<th class="textoCenter">ENCUESTADORA</th>
+				<th class="textoCenter">PESO</th>
+				<!--th class="textoCenter borderLeft">DESCARGA</th-->
+			</tr>
+			<tr class="stag-book borderBottomFino negrita" ng-repeat="datos in store.encuestasPASOpost">
+					<td class="borderRight textoCenter">{{datos.nro}}</td>
+					<td class="textoCenter">{{datos.fecha}}</td>
+					<td class="textoCenter">{{datos.enc}}</td>
+					<td class="textoCenter">
+							<span ng-if="datos.peso >= 0 && datos.peso < 0.05">
+								<img src="images/bat0.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.05 && datos.peso < 0.1">
+								<img src="images/bat1.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.1 && datos.peso < 0.15">
+								<img src="images/bat2.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.15 && datos.peso < 0.20">
+								<img src="images/bat3.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.20 && datos.peso < 0.30">
+								<img src="images/bat4.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.30">
+								<img src="images/bat5.png" height="20" width="20" />
+							</span>	
+					</td>
+					<!--td class="textoCenter borderLeft">
+						<a ng-href="{{datos.link}}">
+							<img src="images/downloadIcon.png" height="20" width="20" />
+						</a>
+					</td-->
+
+						
+			</tr>
+		</table>
+		</center>
+
+	</div>
+
+
+	<div class="titTablaEnc">Encuestas para Primera Vuelta</div>
+	<div style="margin-top: 25px;">
+
+		<center>
+		<table class="table-condensed tablasTexto" width="100% ">	
+			<tr class="stag-book borderBottomThick">
+				<th class="borderRight textoCenter">ENCUESTA N°</th>
+				<th class="textoCenter">FECHA</th>
+				<th class="textoCenter">ENCUESTADORA</th>
+				<th class="textoCenter">PESO</th>
+				<!--th class="textoCenter borderLeft">DESCARGA</th-->
+			</tr>
+			<tr class="stag-book borderBottomFino negrita" ng-repeat="datos in store.encuestasPV">
+					<td class="borderRight textoCenter">{{datos.nro}}</td>
+					<td class="textoCenter">{{datos.fecha}}</td>
+					<td class="textoCenter">{{datos.enc}}</td>
+					<td class="textoCenter">
+							<span ng-if="datos.peso >= 0 && datos.peso < 0.05">
+								<img src="images/bat0.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.05 && datos.peso < 0.1">
+								<img src="images/bat1.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.1 && datos.peso < 0.15">
+								<img src="images/bat2.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.15 && datos.peso < 0.20">
+								<img src="images/bat3.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.20 && datos.peso < 0.30">
+								<img src="images/bat4.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.30">
+								<img src="images/bat5.png" height="20" width="20" />
+							</span>	
+					</td>
+					<!--td class="textoCenter borderLeft">
+						<a ng-href="{{datos.link}}">
+							<img src="images/downloadIcon.png" height="20" width="20" />
+						</a>
+					</td-->
+
+						
+			</tr>
+		</table>
+		</center>
+
+	</div>		
+
+	<div class="titTablaEnc">Encuestas para PASO en Provincia de Buenos Aires</div>
+	<div style="margin-top: 25px;">
+
+		<center>
+		<table class="table-condensed tablasTexto" width="100% ">	
+			<tr class="stag-book borderBottomThick">
+				<th class="borderRight textoCenter">ENCUESTA N°</th>
+				<th class="textoCenter">FECHA</th>
+				<th class="textoCenter">ENCUESTADORA</th>
+				<th class="textoCenter">PESO</th>
+				<!--th class="textoCenter borderLeft">DESCARGA</th-->
+			</tr>
+			<tr class="stag-book borderBottomFino negrita" ng-repeat="datos in store.encuestasPasoProv">
+					<td class="borderRight textoCenter">{{datos.nro}}</td>
+					<td class="textoCenter">{{datos.fecha}}</td>
+					<td class="textoCenter">{{datos.enc}}</td>
+					<td class="textoCenter">
+							<span ng-if="datos.peso >= 0 && datos.peso < 0.05">
+								<img src="images/bat0.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.05 && datos.peso < 0.1">
+								<img src="images/bat1.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.1 && datos.peso < 0.15">
+								<img src="images/bat2.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.15 && datos.peso < 0.20">
+								<img src="images/bat3.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.20 && datos.peso < 0.30">
+								<img src="images/bat4.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.30">
+								<img src="images/bat5.png" height="20" width="20" />
+							</span>	
+					</td>
+					<!--td class="textoCenter borderLeft">
+						<a ng-href="{{datos.link}}">
+							<img src="images/downloadIcon.png" height="20" width="20" />
+						</a>
+					</td-->
+
+						
+			</tr>
+		</table>
+		</center>
+
+	</div>	
+
+	<div class="titTablaEnc">Encuestas para PASO Ciudad de Buenos Aires</div>
+	<div style="margin-top: 25px;">
+
+		<center>
+		<table class="table-condensed tablasTexto" width="100%">	
+			<tr class="stag-book borderBottomThick">
+				<th class="borderRight textoCenter">ENCUESTA N°</th>
+				<th class="textoCenter">FECHA</th>
+				<th class="textoCenter">ENCUESTADORA</th>
+				<th class="textoCenter">PESO</th>
+				<!--th class="textoCenter borderLeft">DESCARGA</th-->
+			</tr>
+			<tr class="stag-book borderBottomFino negrita" ng-repeat="datos in store.encuestasPasoCABA">
+					<td class="borderRight textoCenter">{{datos.nro}}</td>
+					<td class="textoCenter">{{datos.fecha}}</td>
+					<td class="textoCenter">{{datos.enc}}</td>
+					<td class="textoCenter">
+							<span ng-if="datos.peso >= 0 && datos.peso < 0.05">
+								<img src="images/bat0.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.05 && datos.peso < 0.1">
+								<img src="images/bat1.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.1 && datos.peso < 0.15">
+								<img src="images/bat2.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.15 && datos.peso < 0.20">
+								<img src="images/bat3.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.20 && datos.peso < 0.30">
+								<img src="images/bat4.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.30">
+								<img src="images/bat5.png" height="20" width="20" />
+							</span>	
+					</td>
+					<!--td class="textoCenter borderLeft">
+						<a ng-href="{{datos.link}}">
+							<img src="images/downloadIcon.png" height="20" width="20" />
+						</a>
+					</td-->
+
+						
+			</tr>
+		</table>
+		</center>
+
+	</div>	
+	<div class="titTablaEnc">Encuestas para Elecciones Generales Ciudad de Buenos Aires</div>
+	<div style="margin-top: 25px;">
+
+		<center>
+		<table class="table-condensed tablasTexto" width="100%">	
+			<tr class="stag-book borderBottomThick">
+				<th class="borderRight textoCenter">ENCUESTA N°</th>
+				<th class="textoCenter">FECHA</th>
+				<th class="textoCenter">ENCUESTADORA</th>
+				<th class="textoCenter">PESO</th>
+				<!--th class="textoCenter borderLeft">DESCARGA</th-->
+			</tr>
+			<tr class="stag-book borderBottomFino negrita" ng-repeat="datos in store.encuestasGralCABA">
+					<td class="borderRight textoCenter">{{datos.nro}}</td>
+					<td class="textoCenter">{{datos.fecha}}</td>
+					<td class="textoCenter">{{datos.enc}}</td>
+					<td class="textoCenter">
+							<span ng-if="datos.peso >= 0 && datos.peso < 0.05">
+								<img src="images/bat0.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.05 && datos.peso < 0.1">
+								<img src="images/bat1.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.1 && datos.peso < 0.15">
+								<img src="images/bat2.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.15 && datos.peso < 0.20">
+								<img src="images/bat3.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.20 && datos.peso < 0.30">
+								<img src="images/bat4.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.30">
+								<img src="images/bat5.png" height="20" width="20" />
+							</span>	
+					</td>
+					<!--td class="textoCenter borderLeft">
+						<a ng-href="{{datos.link}}">
+							<img src="images/downloadIcon.png" height="20" width="20" />
+						</a>
+					</td-->
+
+						
+			</tr>
+		</table>
+		</center>
+
+	</div>	
+	<div class="titTablaEnc">Encuestas para Ballotage Ciudad de Buenos Aires</div>
+	<div style="margin-top: 25px;">
+
+		<center>
+		<table class="table-condensed tablasTexto" width="100%">	
+			<tr class="stag-book borderBottomThick">
+				<th class="borderRight textoCenter">ENCUESTA N°</th>
+				<th class="textoCenter">FECHA</th>
+				<th class="textoCenter">ENCUESTADORA</th>
+				<th class="textoCenter">PESO</th>
+				<!--th class="textoCenter borderLeft">DESCARGA</th-->
+			</tr>
+			<tr class="stag-book borderBottomFino negrita" ng-repeat="datos in store.encuestasBallotageCABA">
+					<td class="borderRight textoCenter">{{datos.nro}}</td>
+					<td class="textoCenter">{{datos.fecha}}</td>
+					<td class="textoCenter">{{datos.enc}}</td>
+					<td class="textoCenter">
+							<span ng-if="datos.peso >= 0 && datos.peso < 0.05">
+								<img src="images/bat0.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.05 && datos.peso < 0.1">
+								<img src="images/bat1.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.1 && datos.peso < 0.15">
+								<img src="images/bat2.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.15 && datos.peso < 0.20">
+								<img src="images/bat3.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.20 && datos.peso < 0.30">
+								<img src="images/bat4.png" height="20" width="20" />
+							</span>	
+							<span ng-if="datos.peso >= 0.30">
+								<img src="images/bat5.png" height="20" width="20" />
+							</span>	
+					</td>
+					<!--td class="textoCenter borderLeft">
+						<a ng-href="{{datos.link}}">
+							<img src="images/downloadIcon.png" height="20" width="20" />
+						</a>
+					</td-->
+
+						
+			</tr>
+		</table>
+		</center>
+
+	</div>
+</div>
+
+
+<style type="text/css">
+
+.borderBottomThick{
+	border-bottom:2px solid rgb(102, 100, 100)
+}
+.borderBottomFino{
+	border-bottom:1px solid rgba(102, 100, 100, 0.15);
+}
+.borderRight{
+	border-right:1px solid rgb(102, 100, 100)
+}
+.borderLeft{
+	border-left:1px solid rgb(102, 100, 100)
+}
+
+.textoCenter {
+	text-align:center;
+}
+
+
+
+
+
+</style>
+
+
+

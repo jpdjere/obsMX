@@ -1,0 +1,76 @@
+
+<div>
+	<div>
+
+		<center>
+		<table class="table-condensed tablasTexto" width="90%">	
+			<tr class="stag-book borderBottomThick">
+				<th class="borderRight">ENCUESTADORA</th>
+				<th class="textoCenter">ERROR PROMEDIO</th>
+				<th class="textoCenter">ENCUESTAS ANALIZADAS</th>
+				<th class="textoCenter borderLeft">RATING</th>
+			</tr>
+			<tr class="stag-book negrita borderBottomFino" ng-repeat="datos in store.ratings">
+					<td class="borderRight">{{datos.enc}}</td>
+					<td class="textoCenter">+/- {{datos.errprom | number:2}}</td>
+					<td class="">
+
+							<span style="padding:25px;margin-left:190px" >
+								{{datos.encuestasprom}}
+							</span>
+							<span ng-show="datos.encuestasprom >= 5">
+								<img src="images/tick.png" height="20" width="20" />
+							</span>						
+
+					</td>		
+					<td class="textoCenter  borderLeft">{{datos.rating | number:2}}</td>
+			</tr>
+		</table>
+		</center>
+
+	</div>
+	<div class="exp_underTable tablasTexto">
+		<ul>
+
+			<li><p>
+				Para esta evaluación se analizaron encuestas realizadas por las 18 consultoras que forman parte del Observatorio en elecciones nacionales y provinciales 	de 2007 a 2013 y en cada una de ellas se calculó la diferencia entre los valores arrojados por las encuestas y el resultado final de la elección.
+				</p>
+			</li>
+			<li>
+				<p>
+				También en esta calificación se corrigió el error calculado de acuerdo a la distancia entre la fecha de  publicación de la encuesta y la fecha de la elección, de acuerdo a la fórmula del decaimiento exponencial.
+				</p>
+			</li>
+			<li>
+				<p>
+				Como regla general, para que una encuestadora pueda obtener un rating propio, se deben haber analizado por lo menos 5 encuestas. Si no existen 	suficientes datos, la consultora tendrá una calificación que será igual a la encuestadora con el peor rating propio.Una encuestadora perfecta tendría un rating de 1.
+				</p>
+			</li>
+			<!--li>
+				<p>
+				<p style="margin-top:8px"><u><b>Definiciones:</b></u></p>
+				
+				<p><b>ERROR PROMEDIO:</b> El error promedio de la encuestadora por cada candidato. Representa el margen de error histórico para cada candidato obtenido como un 	promedio de las diferencias en todas las encuestas evaluadas.</p>
+				<p><b>ENCUESTAS ANALIZADAS:</b> La cantidad de encuestas analizadas en las elecciones entre 2009 y 2013.</p>
+				<p><b>RATING:</b> La calificación final de encuestadora de acuerdo al error promedio. Una encuestadora perfecta tendría un rating de 1.</p>
+				</p>
+			</li-->
+		</ul>
+	</div>
+</div>
+
+
+<style type="text/css">
+	/*-------------------CSS para Tabla de Encuestadoras ------------------*/
+	
+	.fondoverde {
+		background:lightgreen;
+	}
+	.negrita:hover {
+		background: gray;
+		font-weight: bold;
+	}
+
+
+</style>
+

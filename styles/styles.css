@@ -1,0 +1,723 @@
+
+
+	@font-face { font-family: Stag-Medium; src: url('../fonts/Stag-Medium.otf'); }
+	@font-face { font-family: Stag-Book; src: url('../fonts/Stag-Book.otf'); }
+	/*@font-face { font-family: Stag-MediumItalic; src: url('../fonts/Stag-MediumItalic.otf'); }
+	@font-face { font-family: Stag-Light; src: url('../fonts/Stag-Light.otf'); }
+	@font-face { font-family: Stag-LightItalic; src: url('../fonts/Stag-LightItalic.otf'); }
+	@font-face { font-family: Stag-Semibold; src: url('../fonts/Stag-Semibold.otf'); }
+	@font-face { font-family: Stag-Thin; src: url('../fonts/Stag-Thin.otf'); }
+	@font-face { font-family: Stag-ThinDot; src: url('../fonts/Stag-ThinDot.otf'); }
+	
+	@font-face { font-family: Stag-Black; src: url('../fonts/Stag-Black.otf'); }        */
+	/*@font-face { font-family: ArialRegular; src: url('fonts/Arial-Regular.ttf'); }*/
+
+html, body {
+    height: 100%;
+}
+	body {
+		background-color:#fff;
+
+	}
+
+	ul
+	{
+	    list-style-type: none;
+	    margin:0;
+	    padding:0;
+	}	
+
+	li
+	{
+	    margin-top:5px;
+	}
+
+	.stag { 
+		font-family: Stag-Medium, sans-serif;
+		font-size:17px;
+		color:black;
+	}
+	.stag-book { 
+		font-family: Stag-Book, sans-serif;
+		color:black;
+	}	
+	/*
+	.stag-light { 
+		font-family: Stag-Light, sans-serif;
+		color:black;
+	}	
+	.stag-thin { 
+		font-family: Stag-Thin, sans-serif;
+		color:black;
+	}	
+	.stag-thindot { 
+		font-family: Stag-ThinDot, sans-serif;
+		color:black;
+	}	
+	.stag-thindot { 
+		font-family: Stag-ThinDot, sans-serif;
+		color:black;
+	}		*/
+	.georgia { 
+		font-family: Georgia, sans-serif;
+		color:black;
+	}	
+	.arialregular { 
+		font-family: ArialRegular, sans-serif;
+		color:black;
+	}
+
+
+	.sectionTitle{
+		font-family: Stag-Book, sans-serif;
+		color:black;
+		font-size: 37px;
+		width: 300px;
+		margin: 0 auto;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+	.cuerpo{
+		width:100%;
+		height:100%;
+		vertical-align: center;
+		position: relative;
+	}
+
+	.tituloObs {
+
+
+		border-top: 1px solid rgb(157, 158, 160);
+		border-bottom: 1px solid rgb(157, 158, 160);
+		display:block;
+		width:100%;
+		margin-top:0px;
+		margin-bottom:0px;
+
+	}
+
+	.titulo { 
+		font-family: Stag-Medium, sans-serif;
+		font-size:6vw;
+		color: rgb(94, 140, 192);
+		stroke: none;
+
+	}	
+
+	.titulo2 { 
+		font-family: Stag-Light, sans-serif;
+		font-size:6vw;
+		color: rgb(94, 140, 192);
+		stroke: none;
+	}
+	
+	.wrapper{
+		max-width: 990px;
+		/*background: grey;*/
+		margin: 0 auto;
+	}
+
+	.navWrapper{
+		width:870px;
+		margin: 0 auto;
+
+	}
+
+	.navWrapperWrapper{
+
+		width:100%;
+		border-bottom:3px solid #9D9EA0;
+
+	}
+
+	.graphWrapper{
+		width:1000px;
+		margin: 0 auto;
+	}
+
+	.textWrapper{
+		border-bottom:1px solid #9D9EA0;
+		padding-bottom: 25px;
+	}
+
+	.footer{
+		width:100%;
+		border-top:2px solid black;
+		float:right;
+	}
+
+	.imgFooter{
+		height:40px;
+		width:auto;
+		margin-right:10px;
+
+	}
+
+	.exp_overBarGraph {
+
+		font: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		width: 50%;
+		margin: auto;
+		text-align: center;
+		color: black;
+	}
+	.titTablaEnc{
+		font-family: Stag-Medium, sans-serif;
+		font-size: 23px;
+		color: black;
+		margin-top: 25px;
+		margin-bottom: 20px;
+			
+
+	}	
+	.exp_underTable {
+		font-family: Arial,"Times New Roman",Times,serif;
+		font-size:14px;
+		font-weight: 500;
+		width:900px;
+		margin: 0 auto;
+		margin-top:25px;
+		text-align: justify;
+    	text-justify: inter-word;
+    	color:black;
+	}
+
+	.text_metod { 
+		font-family: Arial,"Times New Roman",Times,serif;
+		font-size: 14px;
+		color: black;
+		margin-bottom: 8px;
+		width: 800px;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		text-align: justify;
+	}
+
+	.titulosMet{
+		font-weight:800;
+	}	
+
+	.factor{
+		font-style: italic;
+		margin-bottom:10px;
+	}
+
+	.columnas{
+		width: 100%;
+		height: 250px;
+		margin-top: 20px;
+	}
+
+	.columna{
+		border-top: 1px solid grey;
+		margin-left: 15px;
+		margin-right: 15px;
+		padding: 12px;
+		float: left;
+		width: 43%;
+		height: 100%;
+	}
+
+	.fotoAutor{
+		width:100px;
+		height:100px;
+		float:left;
+		margin-right:8px;
+	}
+
+	.titCol{
+		font-family: Stag-Book, sans-serif;
+		font-size: 24px;
+		color: black;
+	}
+
+	.autorCol{
+		font-family: Georgia, sans-serif;
+		font-size:17px;
+		color:rgb(94, 140, 192);
+	}
+
+	.bajadaCol{
+		font-family: Georgia, sans-serif;
+		font-size:17px;
+		color:black;		
+	}
+
+	.shareButton {
+	  width: 3vw;
+	  height: auto;
+	  float: right;
+	  margin-top: 1vw;
+	  margin-left: 8px;
+	}
+
+	.mesSlider{
+
+	  font-size: 35px;
+	  margin: 0 auto;
+	  padding-top: 25px;
+	  text-align: center;
+	}	
+
+	.mesSliderFrentes{
+
+	  width: 250px;
+	  font-size: 35px;
+	  margin: 0 auto;
+	  padding-top: 25px;
+
+	}
+
+	.ultEncuestas{
+	    float: left;
+	    font-size: 13px;
+	    padding-top: 10px;
+	    width: 95%;
+	}
+
+	.sliderYmes{
+	  width: 70%;
+	  float: left;
+	}
+
+	.explicSlider{
+
+		text-align: justify;
+		padding: 10px 4px 10px 4px;
+	}
+
+	.wrapperSlider{
+	  margin-top: 20px;
+	  width: 1000px;
+	  height: 100px;
+
+	}
+
+	.mobileHidden{
+
+		float:left;
+	}
+
+
+	.tituloPASO {
+	  width: 535px;
+	  font-size: 40px;
+	  margin: 0 auto;
+	  padding-top: 25px;
+	  font-family: Stag-Medium, sans-serif;
+	  color: black;
+	}
+	.subtituloPASO{
+    	width: 499px;
+    	font-size: 28px;
+    	margin: 0 auto;
+    	font-family: Stag-Medium, sans-serif;
+    	color: #757575;	
+	}	
+
+	.tituloPV {
+	  width: 600px;
+	  font-size: 40px;
+	  margin: 0 auto;
+	  padding-top: 25px;
+	  font-family: Stag-Medium, sans-serif;
+	  color: black;
+	}
+	.subtituloPV{
+    	width: 499px;
+    	font-size: 28px;
+    	margin: 0 auto;
+    	font-family: Stag-Medium, sans-serif;
+    	color: #757575;	
+	}
+	.tituloPASO-CABA {
+	  width: 205px;
+	  font-size: 55px;
+	  margin: 0 auto;
+	  padding-top: 25px;
+	  font-family: Stag-Medium, sans-serif;
+	  color: black;
+	}	
+
+	.tituloEG-CABA {
+	  width: 535px;
+	  font-size: 55px;
+	  margin: 0 auto;
+	  padding-top: 25px;
+	  font-family: Stag-Medium, sans-serif;
+	  color: black;
+	}		
+
+	.tituloDifPre{
+	    width: 1000px;
+	    font-size: 40px;
+	    margin: 0 auto;
+	    font-family: Stag-Medium, sans-serif;
+	    color: black;
+	    margin-left: -300px;
+
+	}
+
+	.tituloPASO-Prov {
+	  width: 205px;
+	  font-size: 55px;
+	  margin: 0 auto;
+	  padding-top: 25px;
+	  font-family: Stag-Medium, sans-serif;
+	  color: black;
+	}
+
+
+	mlabeledtr > mtd:first-child { display: table-cell; }
+
+
+	/*-------------------CSS para D3 ------------------*/
+
+	.rectNorm{
+		fill:rgb(135, 179, 228);
+		stroke:rgb(135, 179, 228);
+		stroke-width:1;
+	}	
+
+	.rectHover{
+		fill:rgba(51, 51, 192, 0.92);
+		stroke-width:1;
+	}
+
+	.lineashor{
+		stroke:rgba(0, 0, 0, 0.92);
+		stroke-width:1;
+
+	}
+
+	.tooltip2 {
+
+		fill:white;
+		stroke:grey;
+		stroke-width:1;
+		ry:1;
+		rx:1;
+
+		text-align: center;
+		width: 160px;
+		height: 100px;
+		padding: 8px;
+
+		pointer-events: none;
+
+	}
+
+	.textoTooltip{
+
+		font-family: Stag-Medium, sans-serif;
+		font-size:13px;
+		color:black;
+	}
+
+	.logosCuadros{
+		cursor:pointer;
+	}
+
+	/*.etiquetasInternas{
+		background: none;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		left: 690px;
+		bottom: -130px;
+		display: none;
+	}*/
+
+	.etiquetasInternas{
+		background: none;
+		width: 150px;
+		height: 180px;
+		position: absolute;
+		left: 460px;
+		bottom: 100px;
+		display: none;
+		border-radius: 50px;
+	}
+
+	.divCruz{
+		position: absolute;
+		background: transparent;
+		width: 35px;
+		height: 35px;
+		top: 845px;
+		left: 790px;
+		cursor:pointer;
+		display:none;
+	}
+
+	dthree-directive{
+
+			width:100%;
+			height:100%;
+			display:block;
+		}
+
+
+
+.hoverCand {
+	/*color:white;*/
+	background:#92C0E8;
+}
+
+th>p,td>p {
+	text-align: center;
+	margin: 0 0 0 0;
+}
+
+
+.borderBottomThick{
+	border-bottom:2px solid rgb(102, 100, 100)
+}
+.borderBottomFino{
+	border-bottom:1px solid rgba(102, 100, 100, 0.15);
+}
+.borderRight{
+	border-right:1px solid rgb(102, 100, 100)
+}
+.borderLeft{
+	border-left:1px solid rgb(102, 100, 100)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- Galaxy S4 ----------- */
+/*                                                      */
+/* Portrait and Landscape */
+@media screen and (max-device-width: 720px) and (max-device-height: 720px){
+
+	.wrapper {
+		max-width: 100%;
+
+	}
+	.logoTop{
+		display:none;
+	}		
+	.logoMobile{
+		display:block !important;
+		float:left;
+		width:80%;
+		height:auto;
+		padding:30px;
+	}
+
+
+	.logoMenu{
+		display:block !important;
+		float:left;
+		width:20%;
+		height:auto;
+		padding-top:60px;
+		padding-bottom:30px;
+		padding-left:35px;
+	}
+
+	.mobileNav {
+
+		width:100%;
+		font-size:85px;
+		text-align: center;
+
+	}
+	.mobileNav>ul {
+		width:100%;
+		list-style:none;
+	}
+	.mobileNav li {
+		width:100%;
+		margin-bottom:40px;
+
+	}
+
+	.mobileShow{
+		display:block !important;
+	}	
+	.mobileHidden{
+		display:none !important;
+		float:left;
+	}
+
+	.divSvgMobileCandPaso{
+		height: 840px;
+	}
+
+	.divSvgMobilePV{
+		height: 800px;
+  		width: 97%;
+	}
+
+	.divSvgMobilePasoCABA{
+		height: 800px;
+  		width: 97%;
+	}	
+	.divSvgMobileGralCABA{
+		height: 400px;
+  		width: 97%;
+	}
+
+	.divSvgMobilePasoProv{
+		height: 700px;
+  		width: 97%;		
+	}
+
+
+	.navWrapperWrapper{
+		display:none;
+	}
+
+	#svgtitulo {
+		display:none;
+
+	}
+	.sectionTitle{
+
+	}
+	.exp_overBarGraph {
+
+
+		color: black;
+		width: 90%;
+		margin: 0 auto;
+		text-align: justify;
+	}
+	.sliderYmes {
+		width: 100%;
+		/* float: left; */
+	}
+
+
+	#svggraficoCandPASO{
+		float:initial !important;
+		
+	}
+	.graficoyTablaCandPASO{
+
+		margin-bottom:80px;
+		display: inline-block;
+		width: 100%;
+	}
+
+
+	.titTablaEnc{
+		font-family: Stag-Medium, sans-serif;
+		font-size: 50px;
+		color: black;
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+	.tituloPASO {
+	  width: 380px;
+	  font-size: 40px;
+	  margin: 0 auto;
+	  padding-top: 25px;
+	  font-family: Stag-Medium, sans-serif;
+	  color: black;
+	}
+
+
+	/*------------------------METODOLOGIA TEXTO--------------------------*/
+	.text_metod { 
+		font-family: Arial,"Times New Roman",Times,serif;
+		font-size: 40px;
+		color: black;
+		margin-bottom: 8px;
+		width: 100%;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		text-align: justify;
+		padding-left:20px;
+		padding-right:20px;
+	}
+	.sectionTitle{
+
+	}
+
+	/*-----ELMINO LOS NOMBRES DE MES Y REEMPLAZO POR DROPDOWN -----*/
+	#textoCandPASO{
+		display:none;
+	}
+	.monthDropdown{
+		display: block !important;
+		width: 220px;
+		margin: 0 auto;
+		font-size: 60px;
+	}
+	/*---------------------ELMINO LOS SLIDERS y reemplazo EXPLICACION----------------------*/
+	#sliderCandPASO{
+		display:none;
+	}
+
+	.explicMobile {
+		display:block;
+		width: 95%;
+		margin: 0 auto;
+		text-align: justify;
+		font-size: 23px;
+	}
+	.wrapperSlider {
+		display:none;
+		margin-top: 20px;
+		width: 1000px;
+		height: 100px;
+	}
+	/*--------------------CORRIJO COLUMNAS MIAS Y NACHO----------------------*/
+
+
+
+	/*-----------------------------DROPDOWN-----------------------*/
+
+
+	/*--------------------COSAS GENERALES----------------------*/
+	.tablasTexto {
+
+		font-size: 35px;
+
+	  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	  line-height: 1.42857143;
+	  color: #333;
+	}
+
+	#cuerpo{
+		float: left;
+	}
+
+
+}
+
+

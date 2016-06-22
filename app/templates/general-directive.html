@@ -1,0 +1,289 @@
+<style>
+
+
+path {
+  stroke-width: 1px;
+  stroke: white;
+  fill: #999;
+  cursor: pointer;
+}
+
+path.q0-3 {
+  fill: #deebf7;
+}
+
+path.q1-3 {
+  fill: #9ecae1;
+}
+
+path.q2-3 {
+  fill: #3182bd;
+}
+
+div.tooltipMap {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  padding: 4px 8px;
+  display: none;
+}
+
+div.bloqueH{
+  width:100%;
+  height:calc(100%/5);
+}
+
+.bloqueInd{
+  width:100%;
+  height: 100%;
+  float:left;
+  border:1px solid black;
+  border-collapse: collapse;
+}
+
+.imgPartidos{
+  height:100%;
+  width: 35%;
+  float: left;
+}
+
+.infoPartidos{
+  height:100%;
+  width: 65%;
+  float: left;
+}
+
+.bloqueInd p {
+  text-align: center;
+}
+
+.bloqueInd .infoPartidos p:first-child {
+  padding: 10px 0 0 0;
+  font-size: 25px;
+}
+
+.bloqueInd img{
+    float: left;
+    padding: 5% 0% 0% 5%;
+    width: 85%;
+    height: auto;
+}
+
+
+.candGroup{
+    height: 100px;
+    padding: 0px 5px 0px 5px;
+    margin: 5px 0px 5px 0px;
+    border-right: 1px solid grey;
+}
+
+
+#panel>div, #panel>div>div{
+
+  font-family: Stag-Medium, sans-serif;
+  font-size:17px;
+color:black;
+}
+
+#stateName {
+  display:table;
+  height:17vh;
+
+}
+
+#stateName p {
+  text-align:center;
+  font-size:22px;
+  vertical-align: middle;
+  display:table-cell;
+  /*margin:36px 20px 0px 20px;*/
+}
+
+#stateResults img {
+  height:50px;
+  width:auto;
+  float:left;
+}
+
+
+
+
+.fotoyPor{
+  height:52px;
+}
+.fotoyPor div{
+  float: left;
+  font-size:20px;
+}
+.candypar{
+  height:72px;
+}
+
+.nombCand{
+  
+    margin: 0px;
+    font-size:18px;
+
+}
+
+.nombPart{
+  
+    margin: 0px;
+    font-size:13px;
+
+}
+</style>
+
+
+
+<div class="row" style="width:100%;height:600px; margin:0 0 0 0">
+
+
+  <div class="col-sm-8 col-xs-12" style="float:left;">
+
+    <div id="map" style="width:100%;"></div>
+    <div id="panel" style="width:100%;height:auto;border: 3px solid black; margin-left:0px" class="row">
+     
+       
+        <div id="stateName" class="col-sm-3 col-xs-12">
+          <p ng-bind="estado.name">{{estado.name}}</p>
+        </div>        
+
+          
+        <div id="stateResults" ng-repeat="datos in datos"  ng-show="$index === estado.id" class="col-sm-9">
+          <div class="row">
+            <div ng-repeat="data in datos | object2Array | orderBy:'data.prom' | limitTo: 4" class="candGroup col-sm-3 col-xs-6">
+              <div class="fotoyPor">
+                <div><img ng-src="{{data.fotos}}"></div>
+                <div style="margin:7px 0px 0px 5px;"><p style="text-align:center">{{data.prom.toFixed(2)}}%</p></div>
+              </div>
+              <div class="candypar">
+                <div class="nombCand"><p style="margin:0px">{{data.cand}}</p></div>
+                <div class="nombPart"><p>{{data.partido}}</p></div>
+              </div>
+            </div>
+          </div>  
+        </div>
+   
+        
+    </div>
+
+  </div>
+
+  <div class="col-sm-4 col-xs-12" style="height:100%;float:left;padding:15px;">
+    <div class="bloqueH">
+      <div class="bloqueInd stag">
+
+        <div class="imgPartidos">
+          <img src="images/byn/pri.png" />
+        </div>
+        <div class="infoPartidos">
+          <p>PRI</p>
+          <p>10 gobernaturas</p>
+          <!-- <p>Constituyentes DF</p> -->
+        </div>
+
+      </div>
+
+    </div>
+    <div class="bloqueH">
+      <div class="bloqueInd stag">
+
+        <div class="imgPartidos">
+          <img src="images/byn/pan.png" />
+        </div>
+        <div class="infoPartidos">
+          <p>PAN</p>
+          <p>1 gobernatura</p>
+
+        </div>
+
+      </div>
+ 
+    </div>
+
+
+
+    <div class="bloqueH">
+      <div class="bloqueInd stag">
+
+        <div class="imgPartidos">
+          <img src="images/byn/prd.png" />
+        </div>
+        <div class="infoPartidos">
+          <p>PRD</p>
+          <p>1 gobernatura</p>
+        </div>
+
+      </div>
+    </div>    
+
+    <div class="bloqueH">
+      <div class="bloqueInd stag">
+
+        <div class="imgPartidos">
+          <img src="images/byn/panprd.png" />
+        </div>
+        <div class="infoPartidos">
+          <p>Alianza PAN-PRD</p>
+          <!-- <p>1 gobernatura</p> -->
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="bloqueH">
+      <div class="bloqueInd stag">
+
+        <div class="imgPartidos">
+          <img src="images/byn/morena.png" />
+        </div>
+        <div class="infoPartidos prueba">
+          <p>Morena</p>
+          <!-- <p>1 gobernatura</p> -->
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+    <!--div class="bloqueH">
+      <div class="bloqueInd stag"><p>Aguascalientes</p></div>
+      <div class="bloqueInd stag"><p>Chihuahua</p></div>
+    </div>
+    <div class="bloqueH">
+      <div class="bloqueInd stag"><p>Durango</p></div>
+      <div class="bloqueInd stag"><p>Hidalgo</p></div>
+    </div>
+    <div class="bloqueH">
+      <div class="bloqueInd stag"><p>Ciudad de México</p></div>
+      <div class="bloqueInd stag"><p>Oaxaca</p></div>
+    </div>
+    <div class="bloqueH">
+      <div class="bloqueInd stag"><p>Quintana Roo</p></div>
+      <div class="bloqueInd stag"><p>Sinaloa</p></div>
+    </div>
+    <div class="bloqueH">
+      <div class="bloqueInd stag"><p>Tamaulipas</p></div>
+      <div class="bloqueInd stag"><p>Tlaxcala</p></div>
+    </div>
+    <div class="bloqueH">
+      <div class="bloqueInd stag"><p>Veracruz</p></div>
+      <div class="bloqueInd stag"><p>Zacatecas</p></div>

@@ -1,0 +1,118 @@
+<div class="textoMet">
+	<div class="text_metod">
+		El Observatorio de Encuestas es una plataforma que recopila y procesa las encuestas a nivel nacional para evaluar las posibilidades de los candidatos en las elecciones presidenciales de 2015.
+	</div>
+	<div class="text_metod">
+		El proyecto está inspirado en los agregadores de encuestas de EE.UU. como RealClearPolitics, FiveThirtyEight, Princeton Election Consortium y HuffingtonPost Pollster.
+	</div>
+	<div class="text_metod">
+		Sin embargo, utiliza una metodología propia que se desarrolló adaptándose al sistema multipartidista de la Argentina y al escenario local de consultoras políticas y encuestadoras. 
+	</div>
+	<div class="text_metod titulosMet">
+		¿Qué encuestas se consideran válidas?
+	</div>
+	<div class="text_metod">
+		El Observatorio de Encuesta considera válidas las encuestas en las que se respeta la elección de candidatos que se dan como opción frente al escenario que se pregunta.
+	</div>
+	<div class="text_metod">
+		Es decir, si una encuestadora pregunta sobre la intención de voto para las PASO y evita incluir a un candidato relevante dentro de una interna (por ejemplo: no incluye a Florencio Randazzo dentro de la primaria del FPV), esa encuesta se descarta.
+	</div>
+	<div class="text_metod">
+		Por otro lado, si se pregunta para el escenario de primera vuelta y se incluyen más de dos candidatos que corresponden (en el momento de publicarse la encuesta) al mismo frente electoral, la encuesta se descarta. Este sería el caso en que se incluyan tanto a Daniel Scioli y Florencio Randazzo como opciones para la primera vuelta.
+	</div>
+	<div class="text_metod titulosMet">
+		Cambios en el escenario
+	</div>
+	<div class="text_metod">
+		Como la recopilación de encuestas comenzó en julio de 2014 y las alianzas y los candidatos aún no fueron completamente definidos, el Observatorio considera necesario actualizar la pertenencia de los candidatos a cada frente electoral a medida que se define el panorama electoral.
+	</div>
+	<div class="text_metod">
+		Por ejemplo, la decisión de Elisa Carrió de competir en una interna con Mauricio Macri se reflejó en la plataforma como la salida de la diputada de la interna de FAUNEN y la inclusión dentro de la del PRO.
+	</div>
+	<div class="text_metod titulosMet" >
+		Cálculo de los promedios
+	</div>
+	<div class="text_metod">
+		El Observatorio de Encuestas de LPO recopila todas las encuestas que considera válidas y las promedia realizando una ponderación de acuerdo a tres factores:
+	</div>	
+	<div class="text_metod factor">
+		<ul>
+			<li>•	Tiempo hasta la elección</li>
+			<li>•	Rating de la encuestadora</li>
+			<li>•	Tamaño de la muestra</li>
+		</ul>
+	</div>	
+	<div class="text_metod titulosMet">
+		Tiempo hasta la elección
+	</div>	
+	<div class="text_metod">
+		Las encuestas tienen un peso mayor cuando la distancia entre la fecha en que se publica y la fecha de la elección es menor. Esta pérdida en el peso no es lineal, sino que utilizan la fórmula del Decaimiento Exponencial.
+	</div>	
+	<div class="text_metod">
+		Además, las encuestas de la misma encuestadora tienen una penalización adicional: la última de la serie no sufre la penalización, pero luego su peso es proporcional a la inversa del número que tienen en la serie.
+	</div>	
+	<div class="text_metod titulosMet">
+		Rating de la encuestadora
+	</div>	
+	<div class="text_metod">
+		Las encuestas también son ponderadas de acuerdo al rating que tiene la encuestadora que la elaboró. El rating de cada encuestadora es calculado por el Observatorio de Encuestas de LPO de acuerdo al performance que tuvieron las encuestas que publicó cada encuestadora en elecciones anteriores a 2015.
+	</div>	
+	<div class="text_metod">
+		La pestaña Ratings explica en detalle el sistema de calificación de cada encuestadora.
+	</div>	
+	<div class="text_metod titulosMet">
+		Tamaño de la muestra
+	</div>	
+	<div class="text_metod">
+		El tamaño de la muestra, es decir, la cantidad de ciudadanos que fueron consultados para cada encuesta también influye en la ponderación. A mayor tamaño de muestra, mayor es el peso de la encuesta.
+	</div>	
+	<div class="text_metod titulosMet">
+		Cálculo del desvío estándar
+	</div>	
+	<div class="text_metod">
+		El Observatorio de Encuestas calcula el desvío estándar de cada frente electoral o cada candidato a través de la fórmula del desvío ponderado por peso:
+	</div>	
+	<div class="text_metod">
+				$$ \sqrt\frac{\sum_{i=1}^N w_i (x_i - \bar{x}^*)^2}{\frac{M -1}{M} \sum_{i=1}^N w_i}$$
+	</div>	
+	<div class="text_metod">
+		donde:
+	</div>	<div class="text_metod">
+		\(x_i\) es el valor de cada observación para un candidato o frente
+	</div>	<div class="text_metod">
+		\(\bar{x}^*\) es el promedio ponderado para un candidato o frente
+	</div>	<div class="text_metod">
+		\(w_i\) es el peso de cada observación
+	</div>	<div class="text_metod">
+		\(N\) es el número de observaciones
+	</div>	<div class="text_metod">
+		\(M\) es el número de pesos distintos a 0
+	</div>	
+	<div class="text_metod  titulosMet">
+		Consultas y dudas
+	</div>	
+	<div class="text_metod">
+		Para preguntas, consultas, dudas, sugerencias o críticas a la metodología, enviá un mail a jpdjeredjian@lapoliticaonline.com o vía Twitter a <a href="https://twitter.com/jpdjere">@JpDjere</a>.
+	</div>
+</div>
+
+<style type="text/css">
+	
+	.textoMet{
+
+		padding-top: 0px;
+
+	}
+
+	.factor{
+
+ 		margin-top:30px;
+	 }
+
+</style>
+
+
+
+
+
+
